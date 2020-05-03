@@ -30,22 +30,15 @@ python manage.py runserver
 # API DOCS
 
 - Authentication:
-
-  Security Scheme Type: Api Token
-  
-  Header parameter name: Authorization
+    Security Scheme Type: Api Token
+    Header parameter name: Authorization
   
 - Links:
   - Create a short link:
-  
-    method: POST 
-    
-    route: /api/v1/links/ 
-    
-    required fields: long_url
-    
-    optional fields: url_id, password, expiration_date
-    
-    example data: {"long_url": "https://google.com", "url_id": "google", "password": "123", "expiration_date": "2020/05/12"}
+      method: POST 
+      route: /api/v1/links/ 
+      required fields: long_url
+      optional fields: url_id, password, expiration_date
+      example data: {"long_url": "https://google.com", "url_id": "google", "password": "123", "expiration_date": "2020/05/12"}
 
 
