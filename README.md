@@ -45,7 +45,41 @@ python manage.py runserver
       required fields: long_url
       
       optional fields: url_id, password, expiration_date
+    
+   - Get list of links
+   
+      method: GET
       
-      example data: {"long_url": "https://google.com", "url_id": "google", "password": "123", "expiration_date": "2020/05/12"}
+      route: /api/v1/links/
+      
+      required fields: -
+      
+      optional fields: search, limit, skip, all
+      
+    - Delete all links
+    
+      method: DELETE
+      
+      route: /api/v1/links/
+      
+      example data: {}
+      
+    - Get link details
+    
+      method: GET
+      
+      route: /api/v1/links/[url_id]
 
-
+    - delete a link
+      
+      method: DELETE
+      
+      route: /api/v1/links/[url_id]
+    
+    - edit a link
+      
+      method: PUT
+      
+      route: /api/v1/links/[url_id]
+      
+      required fields: url_id, expiration_date, long_url
