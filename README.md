@@ -45,7 +45,7 @@ python manage.py runserver
     
    - Get list of links
    
-      (<-- two spaces)method: GET<br/>
+      &nbsp&nbsp method: GET<br/>
       route: /api/v1/links/<br/>
       required fields: -<br/>
       optional fields: search, limit, skip, all
