@@ -62,8 +62,6 @@ python manage.py runserver
       
       route: /api/v1/links/
       
-      example data: {}
-      
     - Get link details
     
       method: GET
@@ -83,3 +81,9 @@ python manage.py runserver
       route: /api/v1/links/[url_id]
       
       required fields: url_id, expiration_date, long_url
+    
+    - get link stats
+      
+      method: GET
+      
+      route: /api/v1/links/[url_id]/stats
