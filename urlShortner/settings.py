@@ -1,7 +1,7 @@
 import os
 
 
-if not os.path.exists('../Api/QRs'): os.mkdir('../Api/QRs')
+if not os.path.exists('./Api/QRs'): os.mkdir('./Api/QRs')
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
