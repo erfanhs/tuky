@@ -45,42 +45,33 @@ python manage.py runserver
     
    - Get list of links
    
-      method: GET
-      
-      route: /api/v1/links/
-      
-      required fields: -
-      
+      method: GET<br/><br/>
+      route: /api/v1/links/<br/>
+      required fields: -<br/>
       optional fields: search, limit, skip, all
       
     - Delete all links
     
-      method: DELETE
-      
+      method: DELETE<br/>
       route: /api/v1/links/
       
     - Get link details
     
-      method: GET
-      
+      method: GET<br/>
       route: /api/v1/links/[url_id]
 
     - delete a link
       
-      method: DELETE
-      
+      method: DELETE<br/>
       route: /api/v1/links/[url_id]
     
     - edit a link
       
-      method: PUT
-      
-      route: /api/v1/links/[url_id]
-      
+      method: PUT<br/>
+      route: /api/v1/links/[url_id]<br/>
       required fields: url_id, expiration_date, long_url
     
     - get link stats
       
-      method: GET
-      
+      method: GET<br/>
       route: /api/v1/links/[url_id]/stats
