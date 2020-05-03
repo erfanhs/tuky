@@ -1,0 +1,25 @@
+#registration-container {
+    text-align: center;
+    background: none;
+    width: 100%;
+    height: auto;
+    color: #fff;
+    margin-top: 50px;
+}
+#registration-container h1 {
+    margin-bottom: 10px;
+}
+#registration-container input {
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+}
+#registration-container button {
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+}
+.registration-error {
+    color: red;
+    margin-top: 20px;
+}

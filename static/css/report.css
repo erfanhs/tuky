@@ -1,0 +1,15 @@
+#report-container {
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+}
+#report-container p, #report-form {
+    margin-top: 30px;
+}
+#report-form input[type="text"] {
+    width: 300px;
+}
+#report-form input[type="text"]::placeholder {
+    text-align: left;
+}

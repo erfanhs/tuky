@@ -1,0 +1,74 @@
+#settings-container {
+    width: 60%;
+    margin-right: 20%;
+    margin-top: 50px;
+    background-color: #e0e0e0;
+    height: auto;
+    border-radius: 30px;
+    text-align: center;
+    padding: 30px 40px;
+    overflow-x: auto;
+    margin-bottom: 50px;
+}
+#change-passwd-container {
+    margin-top: 30px;
+}
+#settings-container h1 {
+    font-size: 110%;
+}
+#settings-container h2 {
+    font-size: 28px;
+}
+#settings-container hr {
+    margin-top: 30px;
+}
+#settings-container input {
+    background-color: white;
+    border-color: #fff !important;
+    box-shadow: 0 5px #bfbfbf;
+    color: #525ede;
+    transition: all;
+    transition-duration: 0.2s;
+}
+#settings-container input.del-acc {
+    color: red;
+}
+#settings-container input::placeholder {
+    color: #b3b3b3;
+}
+#settings-container input:focus {
+    box-shadow: 0 5px 15px #bfbfbf;
+}
+#settings-container button {
+    background: linear-gradient(90deg, rgba(27,132,159,1) 0%, rgba(0,66,108,1) 100%);
+    border: none !important;
+    margin-top: 10px;
+}
+#settings-container button:hover {
+    color: white;
+    box-shadow: 0 0 8px #747796;
+}
+
+#settings-container button.del-acc {
+    background: linear-gradient(90deg, rgba(193,92,92,1) 0%, rgba(159,27,27,1) 100%);
+}
+#settings-container button.del-acc:hover {
+    box-shadow: 0 0 3px orangered !important;
+}
+#settings-container button.api-docs {
+    width: 130px;
+    background: linear-gradient(90deg, rgba(133,2,121,1) 0%, rgba(108,7,185,1) 100%);
+}
+#token-box {
+    width: 50%;
+    height: 40px;
+    overflow-x: auto;
+    float: left;
+    margin-left: 10px;
+    margin-left: 25%;
+}
+.settings-response {
+    height: 10px;
+    margin-top: 5px;
+    color: red;
+}

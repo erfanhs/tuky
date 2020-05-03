@@ -1,0 +1,48 @@
+#container2 {
+    width: 100%;
+    margin-top: 70px;
+}
+
+#container2 img {
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+    flex: 0 0 60%;
+    float: right;
+    margin-right: 8%;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+
+
+#container2 div {
+    float: right;
+    color: #fff;
+    margin-top: 180px;
+    margin-right: 5%;
+    width: 32%;
+}
+
+#container2 div button {
+    width: 130px;
+    height: 40px;
+    background: none;
+    border: 1px solid skyblue;
+    font-size: 18px;
+    border-radius: 3vw;
+    color: #fff;
+    margin-top: 10px;
+    transition-property: all;
+    transition-duration: 0.3s;
+    padding-bottom: 4px;
+}
+
+#container2 div button:hover {
+    background-color: #fff;
+    color: #348feb;
+    cursor: pointer;
+}
+
+#container2 div button:focus {
+    outline: none;
+}

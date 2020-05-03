@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div style="color: white; width: 100%; text-align: center; padding-top: 30px;">
+
+    {% if expired_date %}
+
+        <h2>این لینک در تاریخ {{ expired_date }} منقضی شده است !</h2>
+
+    {% else %}
+
+        <h2>این لینک به دلیل محتوای نامناسب بن شده است !</h2>
+
+    {% endif %}
+
+</div>
+
+{% endblock %}

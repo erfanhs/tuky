@@ -1,0 +1,33 @@
+#container3 {
+    width: 100%;
+    height: auto;
+    background-color: #f2f2f2;
+    display: inline-block;
+}
+
+#container3 h3 {
+    color: #000;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#container3 img {
+    width: 30%;
+    height: 15%;
+}
+
+
+#container3 div h4 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#container3 div {
+    width: 21%;
+    height: auto;
+    margin-right: 3.2%;
+    float: right;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 30px;
+}

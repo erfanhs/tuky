@@ -1,0 +1,162 @@
+@media only screen and (max-width: 1250px) {
+    table {
+        width: 1300px;
+    }
+    #table-container {
+        margin-left: 0;
+        overflow-x: auto;
+    }
+    #table-controller {
+        left: 5px;
+    }
+    #container2 img {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+    #container2 div {
+        width: auto;
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #container3 div {
+        margin-right: 20%;
+    }
+    .modal-content {
+        width: 90% !important;
+    }
+    #qr-modal-content {
+        width: 70% !important;
+    }
+    .pie-container div {
+        margin-top: 50px;
+        width: 60%;
+        margin-left: 21%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    #update-form-container label[for="url_id_"] {
+        margin-top: 0;
+    }
+    #update-form-container label[for="long_url_"] {
+        margin-left: 20px;
+    }
+    #update-form-container input[name="long_url"] {
+        margin-left: 11px;
+    }
+    #update-form-container label[for="expiration_date_"] {
+        margin-top: 10px !important; 
+    }
+    #update-form-container input {
+        width: 90%;
+        margin-top: 0;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .pie-container div {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    #optional-inputs input {
+        margin-top: 5px;
+        width: 200px;
+    }
+    #settings-container {
+        width: 90%;
+        margin-right: 5%;
+    }
+    #settings-container input {
+        margin-top: 10px;
+    }
+    #container2 div {
+        margin-top: 70px;
+    }
+    #shortner-main {
+        height: auto;
+    }
+    #search-container {
+        margin-top: 70px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    #navbarCollapse a {
+        padding-right: 10px !important;
+    }
+    .site-title {
+        font-size: 25px;
+        margin-top: -20px;
+    }
+    #shortner-form div {
+        width: 95%;
+        margin-left: 5px;
+    }
+    #shortner-form {
+        margin-top: 50px;
+    }
+    #container2 img {
+        width: 100%;
+        margin-right: 0;
+    }
+    #container2 div {
+        text-align: center;
+        margin-right: 0;
+        margin-top: 0;
+    }
+    #container2 div button {
+        margin-left: 20px;
+    }
+    #container3 div {
+        margin-right: 8%;
+        width: 80%;
+    }
+    footer div {
+        width: 90%;
+        margin-right: 10px;
+        top: 110px;
+    }
+    #shortner-error {
+        position: relative;
+        top: -6px;
+        right: -10px;
+    }
+    #registration-container input {
+        width: 350px;
+    }
+    footer {
+        height: 200px;
+    }
+    .stats-container-header h6 {
+        margin-left: 0;
+    }
+    .stats-container-header div {
+        margin-right: 0;
+    }
+    .stats-container-header div button {
+        margin-right: 0;
+        width: auto;
+    }
+    #map-chart {
+        width: 100%;
+    }
+    #qr-modal-content {
+        width: 90% !important;
+    }
+    #report-container {
+        width: 90%;
+        margin-right: 5%;
+    }
+    #report-form input[type="text"] {
+        width: 200px;
+    }
+    #container3 div {
+        margin-top: -30px;
+    }
+    #container3 div:nth-child(2) {
+        margin-top: 25px;
+    }
+}

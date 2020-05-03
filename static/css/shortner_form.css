@@ -1,0 +1,76 @@
+.site-title {
+    color: #fff;
+    text-align: center;
+}
+#shortner-main {
+    display: inline-block;
+    width: 100%;
+    height: 250px;
+    background: none;
+    margin-top: 70px;
+}
+#shortner-form {
+    width: 100%;
+    height: auto;
+    margin-top: 5vw;
+}
+#shortner-form input[name="long_url"] {
+    width: 72%;
+}
+#shortner-form button[type="submit"] {
+    font-size: 15px;
+}
+#shortner-form div {
+    width: 80%;
+    height: auto;
+    margin-left: 1%;
+}
+.checkbox_container {
+    color: #fff;
+    position: relative;
+    top: 15px;
+    right: 5px;
+}
+#checkbox{
+    display: none;
+}
+.checkbox_container label:hover {
+    cursor: pointer;
+}
+.checkbox_container label:active {
+    text-shadow: 0 0 10px skyblue; 
+}
+#optional-inputs {
+    height: auto;
+    margin-top: 15px;
+}
+#optional-inputs input {
+    display: inline;
+    margin-right: 5px;
+}
+label[for="url_id"] {
+    color: #fff;
+    margin-right: 5px;
+}
+#shortner-error {
+    color: red;
+    display: inline;
+    margin-right: 10px;
+}
+.fa-copy {
+    color: skyblue;
+    width: 43px;
+    height: 43px;
+    padding-top: 5px;
+    border-radius: 100%;
+    text-shadow: none;
+    font-size: 30px !important;
+    margin-left: 10px;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.fa-copy:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #3e64c2;
+}

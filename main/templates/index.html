@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% load static %}
+
+{% block content %}
+
+        <div id="shortner-main">
+            <h1 class="site-title">لینک های خود را کوتاه تر کنید. 🔗</h1>
+            <div id="shortner-form" dir="ltr">
+                <div>
+                    <button id="shortner-submit">کوتاه کن</button>
+                    <input type="text" name="long_url" placeholder="... لینک را وارد کنید">
+                </div> 
+                <div class="checkbox_container">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox" id="checkbox-label">نمایش تنظیمات پیشرفته <i class="fa fa-plus" id="checkbox-icon" style="color: skyblue; margin-left:5px;"></i></label>
+                </div>
+            </div>
+        </div>
+
+        <script src="{% static 'js/linksTable.js' %}"></script>
+
+        <div id="container3">
+            <h3>
+                چرا انتخاب ما ؟
+            </h3>
+            <div>
+                <img src="{% static 'images/chart.webp' %}" alt="کوتاه کننده لینک"/>
+                <h4>مدیریت لینک ها</h4>
+                <p>قابلیت ایجاد لینک با رمز عبور و آدرس دلخواه، حذف لینک، ویرایش لینک و مشاهده آمار دقیق کلیک.</p>
+            </div>
+            <div>
+                <img src="{% static 'images/expiration.png' %}" alt="کوتاه کننده لینک"/>
+                <h4>بدون تاریخ مصرف</h4>
+                <p>لینک های کوتاه شده محدودیت زمانی ندارند، ولی شما می توانید در صورت نیاز از طریق تنظیمات پیشرفته برای آنان تاریخ انقضا تعیین کنید.</p>
+            </div>
+            <div>
+                <img src="{% static 'images/api.png' %}" alt="کوتاه کننده لینک"/>
+                <h4>API</h4>
+                <p>علاوه بر این وب سایت، می توانید از طریق api ارائه شده برای ایجاد، حذف و آمارگیری لینک های کوتاه اقدام نمایید.</p> 
+            </div>
+            <div>
+                <img src="{% static 'images/github.webp' %}" alt="کوتاه کننده لینک"/>
+                <h4>متن باز و رایگان</h4>
+                <p>کاملاً منبع باز و رایگان. می توانید آن را روی سرور خودتان میزبان کنید.</p>
+            </div>
+        </div>
+
+        <script src="{% static 'js/shortner.js' %}"></script>
+        <script src="{% static 'js/utils.js' %}"></script>
+
+        <footer class="page-footer">
+            <div>
+                <p>تمامی حقوق در انحصار <a href="{% url 'home' %}">تاکی</a> محفوظ است.</p>
+                <a title="کوتاه کننده لینک" href="/">کوتاه کننده لینک</a>
+                |
+                <a href="#">شرایط خدمات</a>
+                |
+                <a href="{% url 'report' %}">گزارش سوء استفاده</a>
+                |
+                <a href="#">درباره ما</a>
+                |
+                <a href="mailto:erfanharirsaz071@gmail.com">ارتباط با ما</a>
+            </div>
+        </footer>
+
+{% endblock %}
+
+

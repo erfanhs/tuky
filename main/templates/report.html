@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% load static %}
+
+{% block content %}
+
+    <div id="report-container">
+        <h1>گزارش سوء استفاده</h1>
+        <p>از طریق فرم زیر لینک هایی که مخرب یا فیشینگ هستند را گزارش کنید، ما به زودی اقدام خواهیم کرد.</p>
+        <div id="report-form">
+            <button id="report-submit">گزارش</button>
+            <input type="text" placeholder="192.168.1.103:8000/example" name="short_url">
+            <script>$('input[name="short_url"]').attr('placeholder', `${location.host}/example`)</script>
+            <p id="report-response"></p>
+        </div>
+    </div>
+
+    <script src="{% static 'js/report.js' %}"></script>
+    
+{% endblock %}

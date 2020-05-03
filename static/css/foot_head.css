@@ -1,0 +1,43 @@
+
+/* header */
+
+#navbarCollapse a {
+    color: gray;
+    height: 40px;
+    transition: all;
+    transition-duration: 0.3s;
+}
+
+#navbarCollapse a:hover {
+    color: white;
+    background: linear-gradient(90deg, rgba(27,119,159,1) 0%, rgba(0,19,108,1) 100%);
+    border-radius: 20px;
+    box-shadow: 0 0 5px blue;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+/* footer */
+
+
+footer {
+    background-color: #27293d;
+    height: 80px;
+}
+
+footer div {
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+
+footer a {
+    color: skyblue;
+}
+
+footer a:hover {
+    color: #348feb;
+}

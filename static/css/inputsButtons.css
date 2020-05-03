@@ -1,0 +1,38 @@
+input {
+    border: 0.5px solid skyblue;
+    background: none;
+    direction: ltr;
+    border-radius: 3vw;
+    color: #e6e6e6;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 40px;
+}
+button {
+    transition-property: all;
+    transition-duration: 0.3s;
+    border: 0.5px solid skyblue;
+    background: none;
+    border-radius: 3vw !important;
+    color: #e6e6e6;
+    height: 40px;
+    width: 80px;
+}
+button:focus {
+    outline: none !important;
+}
+button:hover {
+    background-color: white;
+    cursor: pointer;
+    color: #348feb;
+}
+button:disabled {
+    cursor: default;
+}
+input:focus {
+    outline: none;
+}
+input::placeholder {
+    text-align: right;
+    color: #e6e6e6;
+}

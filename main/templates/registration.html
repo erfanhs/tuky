@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% load static %}
+
+{% block content %}
+
+    <div id="registration-container">
+        <h1>فرم ثبت نام و ورود</h1>
+        <input type="email" name="email" placeholder="ایمیل" required/><br>
+        <input type="password" name="password" placeholder="رمز عبور" required/><br>
+        <button id="login" class="register-submit">ورود</button>
+        <button id="signup" class="register-submit">ثبت نام</button>
+        <p class="registration-error"></p>
+    </div>
+
+    <script src="{% static 'js/registration.js' %}"></script>
+    
+{% endblock %}

@@ -1,0 +1,101 @@
+<html>
+
+    <head>
+
+        {% load static %}
+
+        <!-- seo meta tags -->
+        <title>تاکی | کوتاه کننده لینک</title>
+        <meta name="robots" content="noindex">
+        <meta name="keywords" content="کوتاه کننده لینک, لینک کوتاه کن, کوتاه کننده آدرس, کوچک کننده لینک"/>
+        <meta name="description" content=" سرویس کوتاه کننده لینک با قابلیت ایجاد لینک کوتاه با رمز عبور و آدرس دلخواه، حذف لینک، ویرایش لینک و مشاهده آمار دقیق کلیک">
+        <link rel="canonical" href="/">
+
+        <!-- other meta tags -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+        <!-- font icon -->
+        <script src="https://kit.fontawesome.com/7a206f5a68.js" crossorigin="anonymous"></script>
+
+        <!-- jquery -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+        <!-- date/time lib -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+        <!-- chart libs -->
+        <script src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+        <!-- site styles -->
+        <link rel="stylesheet" href="{% static 'css/foot_head.css' %}">
+        <link rel="stylesheet" href="{% static 'css/ImageAndText.css' %}">
+        <link rel="stylesheet" href="{% static 'css/stats.css' %}">
+        <link rel="stylesheet" href="{% static 'css/askLinkPassword.css' %}">
+        <link rel="stylesheet" href="{% static 'css/inputsButtons.css' %}">
+        <link rel="stylesheet" href="{% static 'css/report.css' %}">
+        <link rel="stylesheet" href="{% static 'css/settings.css' %}">
+        <link rel="stylesheet" href="{% static 'css/featuresList.css' %}">
+        <link rel="stylesheet" href="{% static 'css/shortner_form.css' %}">
+        <link rel="stylesheet" href="{% static 'css/loading.css' %}">
+        <link rel="stylesheet" href="{% static 'css/linksTable.css' %}">
+        <link rel="stylesheet" href="{% static 'css/registration.css' %}">
+        <link rel="stylesheet" href="{% static 'css/media.css' %}">
+
+        <!-- rtl bootstrap -->
+        <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js" integrity="sha384-a9xOd0rz8w0J8zqj1qJic7GPFfyMfoiuDjC9rqXlVOcGO/dmRqzMn34gZYDTel8k" crossorigin="anonymous"></script>
+
+        <!-- cookies lib -->
+        <script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
+
+        <!-- axios -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+
+        <!-- date picker lib -->
+        <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/dark.css">
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+        <!-- site font -->
+        <link href="{% static 'fonts/font-face.css' %}" rel="stylesheet"/>
+        <style>
+            body {
+                background-image: linear-gradient(90deg, rgba(27,119,159,1) 0%, rgba(0,19,108,1) 100%);
+                font-family: 'Vazir', sans-serif;
+                direction: rtl;
+            }
+        </style>
+    
+    </head>
+
+
+    <body>
+
+        <script src="{% static 'js/Auth.js' %}"></script>
+        <script src="{% static 'js/axios.js' %}"></script>
+
+        <!-- bootstrap header -->
+        <header class="navbar navbar-expand-md navbar-light bg-light">
+            <a href="/" title="کوتاه کننده لینک" class="navbar-brand">تاکی | کوتاه کننده لینک</a>
+            <button type="button" style="width: auto;" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="/report" class="nav-item nav-link">گزارش</a>
+                    <a href="mailto:erfanharirsaz071@gmail.com" class="nav-item nav-link">ارتباط با ما</a>
+                    <a href="#" class="nav-item nav-link">درباره ما</a>
+                </div>
+                <div class="navbar-nav ml-auto">
+                </div>
+            </div>
+        </header>
+
+        
+        <div id="body-block">{% block content %}{% endblock %}</div>
+
+    </body>
+</html>

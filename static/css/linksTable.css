@@ -1,0 +1,263 @@
+#table-container {
+    margin-top: 10px;
+    direction: ltr !important;
+}
+
+table {
+    width: 100%;
+    border: none;
+    border-collapse: collapse;
+}
+
+td {
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    border-collapse: collapse;
+    padding-left: 5px;
+}
+
+table thead {
+    text-align: center;
+    background-color: #3c3f5e;
+    color: white;
+}
+
+
+th:nth-child(2) {
+    width: 15%;
+    text-align: center !important;
+}
+td:nth-child(2) {
+    text-align: center !important;
+}
+td:nth-child(4) {
+    padding-top: 5px;
+}
+th:nth-child(3) {
+    width: 7%;
+}
+th:nth-child(4) {
+    width: 30%;
+}
+th:last-child {
+    width: 250px;
+}
+th:first-child {
+    width: 35%;
+}
+#table-controller {
+    direction: ltr !important;
+    width: 108px;
+    height: 40px;
+    position: absolute;
+    left: 5px;
+    margin-top: 5px;
+}
+#table-controller button {
+    background-color: white;
+    border-color: white;
+    width: 48%;
+    height: 100%;
+    float: left;
+    font-size: 30px;
+    color: black;
+}
+#table-controller button:hover {
+    background-color: #add8ff;
+    border-color: #add8ff;
+    color: blue;
+}
+#table-controller button:disabled {
+    background-color: #e6e6e6;
+    color: gray;
+    border-color: white;
+}
+#table-controller button:disabled:hover {
+    cursor: default;
+}
+#link-controller {
+    margin-right: 3px;
+    float: right;
+}
+#link-controller .fa-trash-alt {
+    color: red;
+}
+#link-controller .fa-warning {
+    color: #f2dd3a;
+}
+#link-controller .fa-warning:hover {
+    cursor: default;
+}
+#link-controller .fa-trash-alt:hover {
+    color: darkred;
+}
+#link-controller .fa-qrcode:hover {
+    color: gray;
+}
+#link-controller i:hover {
+    cursor: pointer;
+}
+#link-controller .fa-chart-bar {
+    color: plum;
+}
+#link-controller .fa-ban {
+    color: red;
+}
+#link-controller .fa-ban:hover {
+    cursor: default;
+}
+#link-controller .fa-chart-bar:hover {
+    color: purple;
+}
+#link-controller .fa-edit {
+    color: #1288c7;
+}
+#link-controller .fa-edit:hover {
+    color: #086699;
+}
+#link-controller .fa-lock {
+    color: #a1a69f;
+}
+#link-controller .fa-lock:hover {
+    cursor: default;
+}
+td .fa-copy {
+    font-size: 20px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: auto !important;
+    height: auto !important;
+    margin-right: 1px;
+}
+#modal {
+    display: block;
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.2);
+}
+.modal-content {
+    background-color: #1f1f30 !important;
+    margin: auto;
+    border-radius: 30px !important;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50% !important;
+    box-shadow: 0 0 8px black;
+}
+.close {
+    color: white !important;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    width: 15px;
+}
+.close:hover,
+.close:focus {
+    text-decoration: none;
+    cursor: pointer;
+}
+#qr_img {
+    width: 70%;
+    height: 200px;
+    margin-right: 15%;
+}
+#qr-modal-content {
+    width: 25% !important;
+}
+#update-form-container {
+    width: 100%;
+    text-align: center;
+}
+#update-form-container input {
+    background: none;
+    color: white;
+    border: 1px solid skyblue;
+    margin-right: 10px;
+    direction: ltr;
+    width: 300px;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+#update-form-container input[name="long_url"] {
+    margin-right: 20px !important;
+}
+#update-form-container label[for="long_url_"] {
+    position: relative;
+    right: 8px;
+}
+#update-form-container input:focus {
+    outline: none;
+}
+#update-form-container input::placeholder {
+    direction: rtl !important;
+    color: #ccc !important;
+}
+#update-form-container label {
+    color: white;
+}
+#update-form-container h4 {
+    color: white;
+    padding-bottom: 30px;
+}
+#update-form-container button {
+    background: none;
+    color: white;
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid skyblue;
+
+    transition: all;
+    transition-duration: 0.3s;
+}
+#update-form-container button:hover {
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    color: #348feb;
+}
+#update-form-container button:focus {
+    outline: none;
+}
+#search-container {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+#search-container input {
+    background-color: white;
+    border: none !important;
+    border-top-left-radius: 40px !important;
+    border-top-right-radius: 40px !important;
+    border-bottom-right-radius: 0% !important;
+    border-bottom-left-radius: 0% !important;
+    width: 300px;
+    position: relative;
+    top: 10px;
+    color: #8c8c8c;
+    padding: 0 23px;
+    box-shadow: 0 -3px 5px gray inset;
+}
+#search-container input::placeholder {
+    color: gray;
+}
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+#search-loading {
+    float: right;
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+}

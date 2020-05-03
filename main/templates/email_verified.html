@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <script>
+        Cookies.set('UserToken', '{{ token }}');
+        localStorage['UserEmail'] = '{{ email }}';
+    </script>
+
+    <h3 style="margin-top: 30px; color: white; text-align: center;">ایمیل شما با موفقیت تایید شد.<br><br><a href="{% url 'home' %}" style="margin-right: 5px;">بازگشت به خانه</a></h3>
+
+{% endblock %}
