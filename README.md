@@ -41,14 +41,22 @@ python manage.py runserver
       method: POST<br/>
       route: /api/v1/links/<br/>
       required fields: long_url<br/>
-      optional fields: url_id, password, expiration_date
-    
+      optional fields: url_id, password, expiration_date<br/>
+      long_url: String (starts with http:// or https://)<br/>
+      url_id: String (max 65 char)<br/>
+      password: String<br/>
+      expiration_date: String (syntax: yy/mm/dd)
+      
    - Get list of links
    
       method: GET<br/>
       route: /api/v1/links/<br/>
       required fields: -<br/>
-      optional fields: search, limit, skip, all
+      optional fields: search, limit, skip, all<br/>
+      search: String<br/>
+      limit: String (numerical)<br/>
+      skip: String (numerical)<br/>
+      all: String ("false" or "0")
       
     - Delete all links
     
@@ -70,6 +78,9 @@ python manage.py runserver
       method: PUT<br/>
       route: /api/v1/links/[url_id]/<br/>
       required fields: url_id, expiration_date, long_url
+      long_url: String (starts with http:// or https://)<br/>
+      url_id: String (max 65 char)<br/>
+      expiration_date: String (syntax: yy/mm/dd)
     
     - get link stats
       
