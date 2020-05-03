@@ -38,12 +38,9 @@ python manage.py runserver
 - Links:
   - Create a short link:
   
-      method: POST 
-      
-      route: /api/v1/links/ 
-      
-      required fields: long_url
-      
+      method: POST<br/>
+      route: /api/v1/links/<br/>
+      required fields: long_url<br/>
       optional fields: url_id, password, expiration_date
     
    - Get list of links
