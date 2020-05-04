@@ -48,12 +48,12 @@ def verify(request, verify_id):
 	
 
 @require_GET
-def index(request): return render('index.html')
+def index(request): return render(request, 'index.html')
 @require_GET
-def registration(request): return render('registration.html')
+def registration(request): return render(request, 'registration.html')
 @require_GET
-def settings_(request): return render('settings.html')
+def settings_(request): return render(request, 'settings.html')
 @require_GET
-def report(request): return render('report.html')
+def report(request): return render(request, 'report.html')
 @require_GET
-def stats(request, url_id): return render('stats.html')
+def stats(request, url_id): return render(request, 'stats.html')
