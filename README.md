@@ -38,6 +38,11 @@ python manage.py runserver
     get api token:<br/>
     1 - first login with your account: [login](http://tuky.ir/registration)<br/>
     2 - get api token from your account settings page: [settings](http://tuky.ir/settings)<br/>
+    
+    You must send this header with all your requests:
+    ```javascript
+    { "Authorization": "YOUR-API-TOKEN" }
+    ```
   
 - Links:
   - Create a short link:
