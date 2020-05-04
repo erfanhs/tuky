@@ -1,5 +1,5 @@
 if (Cookies.get('UserToken')) {
-    window.location.replace("{% url 'home' %}");
+    window.location.href = '/';
 }
 
 $('.register-submit').click(function() {
