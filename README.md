@@ -34,6 +34,10 @@ python manage.py runserver
     Security Scheme Type: Api Token
     
     Header parameter name: Authorization
+    
+    get api token:
+    1 - first login with your account [login](http://tuky.ir/registration)
+    2 - get api token from your account settings page: [settings](http://tuky.ir/settings)
   
 - Links:
   - Create a short link:
