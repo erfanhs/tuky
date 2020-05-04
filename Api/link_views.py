@@ -65,6 +65,7 @@ class link_collection(APIView):
         data = check_input_data(request.data)
         if 'error' in data: return Response(data, status=status.HTTP_400_BAD_REQUEST)
         
+        if hasattr(data, '_mutable'): data._mutable = True
         if user: data['user'] = user.pk
 
         serializer = linkSerializer(data = data)
