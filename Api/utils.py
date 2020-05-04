@@ -206,6 +206,8 @@ def recaptcha_validation(request):
     
 
 def check_input_data(data):
+	
+    if hasattr(data, '_mutable'): data._mutable = True
 
     for key in data:
         if key not in ('user', 'url_id', 'long_url', 'password', 'recaptchaToken', 'expiration_date'):
