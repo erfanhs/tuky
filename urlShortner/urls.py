@@ -12,11 +12,11 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     # site routes
-    path('', TemplateView.as_view(template_name='index.html'), name='home'),
-    path('registration/', TemplateView.as_view(template_name='registration.html'), name='registration'),
-    path('settings/', TemplateView.as_view(template_name='settings.html'), name='configs'),
-    path('report/', TemplateView.as_view(template_name='report.html'), name='report'),
-    path('stats/<str:url_id>', TemplateView.as_view(template_name='stats.html'), name='stats'),
+    path('', index, name='home'),
+    path('registration/', registration, name='registration'),
+    path('settings/', settings_, name='configs'),
+    path('report/', report, name='report'),
+    path('stats/<str:url_id>', stats, name='stats'),
     path('verify/<str:verify_id>', verify),
     path('<str:url_id>/', handle_link),
 
