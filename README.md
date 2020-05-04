@@ -86,7 +86,7 @@ python manage.py runserver
       
       method: PUT<br/>
       route: /api/v1/links/[url_id]/<br/>
-      required fields: url_id, expiration_date, long_url
+      required fields: url_id, expiration_date, long_url<br/>
       long_url: String (starts with http:// or https://)<br/>
       url_id: String (max 65 char)<br/>
       expiration_date: String (syntax: yy/mm/dd)
