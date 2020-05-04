@@ -45,7 +45,16 @@ def verify(request, verify_id):
 		return render(request, 'email_verified.html', context={'token': user_token, 'email': user.email})
 	except User.DoesNotExist:
 		return redirect('registration')
+	
 
-				
-			
+@require_GET
+def index(request): return render('index.html')
+@require_GET
+def registration(request): return render('registration.html')
+@require_GET
+def settings(request): return render'settings.html')
+@require_GET
+def report(request): return render('report.html')
+@require_GET
+def stats(request): return render('stats.html')
 
