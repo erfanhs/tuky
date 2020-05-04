@@ -56,4 +56,4 @@ def settings_(request): return render('settings.html')
 @require_GET
 def report(request): return render('report.html')
 @require_GET
-def stats(request): return render('stats.html')
+def stats(request, url_id): return render('stats.html')
