@@ -52,7 +52,7 @@ def index(request): return render('index.html')
 @require_GET
 def registration(request): return render('registration.html')
 @require_GET
-def settings_(request): return render'settings.html')
+def settings_(request): return render('settings.html')
 @require_GET
 def report(request): return render('report.html')
 @require_GET
