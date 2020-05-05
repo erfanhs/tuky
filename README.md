@@ -45,16 +45,20 @@ python manage.py runserver
     ```
   
 - Links:
+
+  Important: for POST & PUT methods, append slash to url is required. Otherwise, the GET request will be considered !
+
   - Create a short link:
   
       method: POST<br/>
       route: /api/v1/links/<br/>
       required fields: long_url<br/>
       optional fields: url_id, password, expiration_date<br/>
-      long_url: String (starts with http:// or https://)<br/>
-      url_id: String (max 65 char)<br/>
-      password: String<br/>
-      expiration_date: String (syntax: yy/mm/dd)
+      **long_url**: String (starts with http:// or https://)<br/>
+      **url_id**: String (max 65 char)<br/>
+      **password**: String<br/>
+      **expiration_date**: String (syntax: yy/mm/dd)<br/>
+      you must send these fields as **form-data**
       
    - Get list of links
    
@@ -62,10 +66,13 @@ python manage.py runserver
       route: /api/v1/links/<br/>
       required fields: -<br/>
       optional fields: search, limit, skip, all<br/>
-      search: String<br/>
-      limit: String (numerical)<br/>
-      skip: String (numerical)<br/>
-      all: String ("false" or "0")
+      **search**: String (a keyword to search in url id and long urls)<br/>
+      **limit**: String (numerical)<br/>
+      **skip**: String (numerical)<br/>
+      **all**: String ("false" or "0")<br/>
+      you must send these fields as **GET Request parameters**
+      **example**: http://tuky.ir/api/v1/links?limit=15&skip=20&all=false&search=instagram
+      
       
     - Delete all links
     
@@ -87,15 +94,17 @@ python manage.py runserver
       method: PUT<br/>
       route: /api/v1/links/[url_id]/<br/>
       required fields: url_id, expiration_date, long_url<br/>
-      long_url: String (starts with http:// or https://)<br/>
-      url_id: String (max 65 char)<br/>
-      expiration_date: String (syntax: yy/mm/dd)
+      **long_url**: String (starts with http:// or https://)<br/>
+      **url_id**: String (max 65 char)<br/>
+      **expiration_date**: String (syntax: yy/mm/dd)<br/>
+      you must send these fields as **form-data**
     
     - get link stats
       
       method: GET<br/>
       route: /api/v1/links/[url_id]/stats
-      
+
+
 # Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
