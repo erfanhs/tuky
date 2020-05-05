@@ -10,7 +10,12 @@ SECRET_KEY = ''
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+
+# required variable
+# domain or ip:port
+HOST_NAME = ''
+
+ALLOWED_HOSTS = [HOST_NAME]
 
 
 INSTALLED_APPS = [
