@@ -70,7 +70,7 @@ python manage.py runserver
       **limit**: String (numerical)<br/>
       **skip**: String (numerical)<br/>
       **all**: String ("false" or "0")<br/>
-      you must send these fields as **GET Request parameters**
+      you must send these fields as **GET Request parameters**<br/>
       **example**: http://tuky.ir/api/v1/links?limit=15&skip=20&all=false&search=instagram
       
       
