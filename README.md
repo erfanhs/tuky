@@ -8,12 +8,13 @@ Tested on python 3.6 and 3.7
 1 - clone the repo:
 ```bash
 git clone https://github.com/erfanhs/tuky.git
-cd tuky
 ```
 2 - install virtual environment and project requirements:
 ```bash
-python -m venv venv
+pip3 install virtualenv
+virtualenv venv
 source venv/bin/activate
+cd tuky
 pip install -r requirements.txt
 ```
 3 - configure settings.py (don't forget to config [reCAPTCHA](https://www.google.com/recaptcha/)):
