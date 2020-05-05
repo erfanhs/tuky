@@ -2,6 +2,9 @@
 .تاکی , سرویس کوتاه کننده لینک با قابلیت ایجاد لینک کوتاه با رمز عبور و آدرس دلخواه, حذف لینک, ویرایش لینک, و مشاهده آمار دقیق کلیک
 
 # how to run
+
+Tested on python 3.6 and 3.7
+
 1 - clone the repo:
 ```bash
 git clone https://github.com/erfanhs/tuky.git
