@@ -46,15 +46,17 @@ class Link(models.Model):
 		if self.password:
 			self.has_password = True
 		
-		qr_img_path = './Api/QRs/' + self.url_id + '.png'
-		qr = qrcode.make(('http://%s/' % settings.HOST_NAME) + self.url_id)
-		qr.save(qr_img_path)
-		self.qr_img = qr_img_path
+		if self.user:
+			qr_img_path = './Api/QRs/' + self.url_id + '.png'
+			qr = qrcode.make(('http://%s/' % settings.HOST_NAME) + self.url_id)
+			qr.save(qr_img_path)
+			self.qr_img = qr_img_path
 
 		super(Link, self).save(*args, **kwargs)
 
 	def delete(self, *args, **kwargs):
-		os.remove('./Api/QRs/' + self.url_id + '.png')
+		if self.user:
+			os.remove('./Api/QRs/' + self.url_id + '.png')
 		super(Link, self).delete(*args, **kwargs)
 
 	def __str__(self):
