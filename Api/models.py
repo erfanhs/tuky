@@ -81,3 +81,11 @@ class Report(models.Model):
 
 	def __str__(self):
 		return str(self.short_url)
+
+	
+
+# run links expiring thread
+from .terminator import expire
+from threading import Thread
+terminator = Thread(target=expire)
+terminator.start()
