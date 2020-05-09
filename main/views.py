@@ -14,7 +14,7 @@ from django.utils import timezone
 def handle_link(request, url_id):
 	url = get_object_or_404(Link, url_id=url_id)
 	if url.expired:
-		return render(request, 'handleLinkError.html', context={'expired_date': str(url.expiration_date.date()).replace('-', '/')})
+		return render(request, 'handleLinkError.html', context={'expired': True})
 	elif url.banned:
 		return render(request, 'handleLinkError.html')
 	
