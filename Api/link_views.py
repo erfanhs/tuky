@@ -100,7 +100,7 @@ class link_element(APIView):
 
         try:
             link = Link.objects.get(url_id=url_id)
-            if not link.user == user:
+            if link.user != user:
                 return Response({'url_id': 'این لینک متعلق به شما نیست !'}, status=status.HTTP_403_FORBIDDEN)
             serializer = linkSerializer(link)
             return Response(serializer.data)
@@ -115,7 +115,7 @@ class link_element(APIView):
         
         try:
             link = Link.objects.get(url_id=url_id)
-            if not link.user == user:
+            if link.user != user:
                 return Response({'error': 'این لینک متعلق به شما نیست !'}, status=status.HTTP_403_FORBIDDEN)
             link.delete()
             return Response({'status': 'لینک با موفقیت حذف شد.'})
@@ -138,7 +138,7 @@ class link_element(APIView):
 
         try:
             link = Link.objects.get(url_id=url_id)
-            if not link.user == user:
+            if link.user != user:
                 return Response({'error': 'این لینک متعلق به شما نیست !'}, status=status.HTTP_403_FORBIDDEN)
             
 
@@ -170,7 +170,7 @@ def linkStats(request, url_id):
 
     try:
         link = Link.objects.get(url_id=url_id)
-        if not link.user == user:
+        if link.user != user:
             return Response({'error': 'این لینک متعلق به شما نیست !'}, status=status.HTTP_403_FORBIDDEN) 
 
         Analyser = ClickAnalyse(link)
