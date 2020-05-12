@@ -67,8 +67,8 @@ class ClickAnalyse:
     def roundClicks(self, clicks):
         for click in clicks:
             date = click.dateTime.astimezone(tz)
-            if date.minute >= 30: date = date + datetime.timedelta(minutes=60 - date.minute)
-            else: date = date - datetime.timedelta(minutes=date.minute)
+            if date.minute >= 30: date += datetime.timedelta(minutes=60 - date.minute)
+            else: date -= datetime.timedelta(minutes=date.minute)
             click.dateTime = date
         return clicks
 
