@@ -108,13 +108,6 @@ python manage.py runserver
       method: GET<br/>
       route: /api/v1/links/[url_id]/stats
 
-
-# Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
 # License
 
 [MIT](https://github.com/erfanhs/tuky/blob/master/LICENSE)
