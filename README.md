@@ -3,7 +3,7 @@
 
 ![Alt text](https://img.techpowerup.org/200621/view.png "صفحه اصلی")
 ![Alt text](https://img.techpowerup.org/200621/screenshot642.png "پنل مدیریت لینک ها")
-![Alt text](https://img.techpowerup.org/200621/stats.png "صفحه آمار بازدید از لینک")
+![Alt text](https://img.techpowerup.org/200621/stats216.png "صفحه آمار بازدید از لینک")
 
 # how to run
 
