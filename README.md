@@ -1,6 +1,8 @@
 # tuky
 .تاکی , سرویس کوتاه کننده لینک با قابلیت ایجاد لینک کوتاه با رمز عبور و آدرس دلخواه, حذف لینک, ویرایش لینک, و مشاهده آمار دقیق کلیک
 
+![Alt text](https://img.techpowerup.org/200621/view.png "Main Page")
+
 # how to run
 
 Tested on python 3.6 and 3.7
