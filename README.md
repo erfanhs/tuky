@@ -1,9 +1,9 @@
 # tuky
 .تاکی , سرویس کوتاه کننده لینک با قابلیت ایجاد لینک کوتاه با رمز عبور و آدرس دلخواه, حذف لینک, ویرایش لینک, و مشاهده آمار دقیق کلیک
 
-![Alt text](https://img.techpowerup.org/200621/view.png "Main Page")
-![Alt text](https://img.techpowerup.org/200621/screenshot642.png "Control Panel")
-![Alt text](https://img.techpowerup.org/200621/stats.png "Click Stats Page")
+![Alt text](https://img.techpowerup.org/200621/view.png "صفحه اصلی")
+![Alt text](https://img.techpowerup.org/200621/screenshot642.png "پنل مدیریت لینک ها")
+![Alt text](https://img.techpowerup.org/200621/stats.png "صفحه آمار بازدید از لینک")
 
 # how to run
 
