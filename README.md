@@ -3,6 +3,7 @@
 
 ![Alt text](https://img.techpowerup.org/200621/view.png "Main Page")
 ![Alt text](https://img.techpowerup.org/200621/screenshot642.png "Control Panel")
+![Alt text](https://img.techpowerup.org/200621/stats.png "Click Stats Page")
 
 # how to run
 
